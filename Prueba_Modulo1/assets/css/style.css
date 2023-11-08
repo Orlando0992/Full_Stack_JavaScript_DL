@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&family=Poppins:ital,wght@0,100;0,300;0,400;0,600;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins';
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/*SECCION HEADER*/
+header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 99;
+    padding: 20px 50px;
+    transition:  .5s;
+}
+
+header h1 {
+    font-family: 'Courier New';
+    color: white;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li .linea {
+    display: block;
+    background-color: black;
+    height: 2px;
+    width: 0%;
+    transition: .5s;
+}
+
+header nav ul li:hover .linea{
+    width: 100%;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+header .nav-bar {
+    font-size: 24px;
+    cursor: pointer;
+    transition: .5s;
+    display: none;
+}
+
+header .nav-bar:hover {
+    color: #4c4c4c;
+}
+
+header nav ul li span.seleccionado {
+    display: block;
+    background-color: black;
+    height: 2px;
+    width: 100%;
+}
+
+/*SECCION INICIO*/
+
+#inicio {
+    position: relative;
+    height: 100vh;
+    padding: 0 40px;
+    background-color: rgb(245, 235, 235);
+}
+
+#inicio .contenido {
+    max-width: 1500px;
+    margin: auto;
+    height: 100%;
+}
+
+#inicio .contenido .info {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    text-align: center;
+    transform: translateY(-50%);
+    z-index: 10;
+    animation: aparecer 3s forwards;
+}
+
+@keyframes aparecer {
+    0%{
+        margin-left: -30px;
+        opacity:0;
+    }
+    100%{
+        margin-left: 0;
+        opacity: 1;
+    }
+}
+
+#inicio .contenido .info h3 {
+    font-size: 50px;
+    color: white;
+    -webki-text-stroke: 2px black;
+    padding-left: 2px;
+    text-shadow: 3px 3px black;
+    letter-spacing: 5px;
+}
+
+#inicio .contenido .info span {
+    display: inline-block;
+    font-size: 25px;
+    color:#4c4c4c;
+    margin-bottom: 15px;
+}
+
+#inicio .contenido .info .redes a {
+    display: inline-block;
+    color:#4c4c4c;
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+#inicio .contenedor-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100vh;
+    clip-path: ellipse(90% 90% at left);
+    /* background-color: cornflowerblue; */
+}
+
+#inicio .contenedor-img .imagen {
+    background-image: url("../img/inicio.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+}
