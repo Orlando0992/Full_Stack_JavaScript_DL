@@ -147,3 +147,63 @@ header nav ul li span.seleccionado {
     height: 100vh;
     background-position: center;
 }
+
+/*SECCION SOBRE MI*/
+
+#sobremi .contenido {
+    padding: 150px 30px;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+}
+
+#sobremi .contenido .left {
+    width: 50%;
+}
+
+#sobremi .contenido .right {
+    width: 50%;
+    padding-left: 50px;
+}
+
+#sobremi .contenido .right .info span {
+    display: inline-block;
+    background-color: #f2f2f2;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+#sobremi .contenido .right .info h3 {
+    font-size: 30px;
+    line-height: 1.4;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+#sobremi .contenido .right .info p {
+    font-size: 15px;
+    color: #767676;
+    line-height: 30px;
+    margin-bottom: 15px;
+}
+
+#sobremi .contenido .right .info .btn-descargar {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #000;
+    color: #fff;
+    padding: 13px 48px;
+    border: 2px solid #000;
+    transition: .5s;
+}
+
+#sobremi .contenido .right .info .btn-descargar:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+#sobremi .contenido .left .contenedor-img img {
+    width: 100%;
+    height: 450px;
+
+}
