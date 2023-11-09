@@ -284,3 +284,43 @@ header nav ul li span.seleccionado {
 #portafolio .galeria .proyecto:hover h3 {
     opacity: 1;
 }
+
+/*SECCION EDUCACION*/
+#educacion .contenido {
+    padding:  150px 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+#educacion .contenido .left span {
+    display: inline-block;
+    background-color: #f2f2f2;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+#educacion .contenido .left h3 {
+    font-size: 30px;
+    line-height: 1.4;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+#educacion .card  {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+#educacion .card img {
+    width: 200px;
+    height: 100px;
+}
+
+#educacion .card p{
+    padding-top: 30px;
+    display: flex;
+}
+
+
